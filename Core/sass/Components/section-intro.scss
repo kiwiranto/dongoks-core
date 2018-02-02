@@ -1,0 +1,48 @@
+#intro {
+	background-image: url(../img/intro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    &:before {
+    	position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+	    content: "";
+	    left: 0;
+	    top: 0;
+    }
+	.hero-text {
+		padding-top: 300px;
+		color: #fff;
+		@include breakpoint(mobile) {
+				padding-top: 150px;
+			}
+		h1 {
+			font-size: 4.375em;
+			font-weight: 700;
+			margin-top: 0;
+			text-transform: uppercase;
+			font-family: 'Montserrat-Bold';
+			@include breakpoint(mobile) {
+				font-size: 21px;
+			}
+		}
+		h2 {
+			font-size: 2em;
+			@include breakpoint(mobile) {
+				font-size: 16px;
+			}
+		}
+		h3 {
+			font-size: 1.25em;
+			@include breakpoint(mobile) {
+				font-size: 14px;
+			}
+		}
+		a {
+			font-size: 1em;
+			margin: 50px auto;
+			font-family: 'Montserrat-Bold';
+		}
+	}
+}

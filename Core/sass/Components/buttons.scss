@@ -1,0 +1,14 @@
+.btn-direction {
+	background: $orange;
+	color: #eee;
+	padding: 12px 30px;
+	border: 2px solid $orange;
+	border-radius: 100px;
+	font-size: 1.3em;
+	transition: all 0.2s ease 0s;
+	&:hover, &:focus {
+		color: #fff;
+		background: transparent;
+		border: 2px solid #fff;
+	}
+}

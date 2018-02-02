@@ -1,0 +1,235 @@
+#destination {
+	background-color: #eef1f2;
+	.map {
+		margin: 30px 0;
+		.styling-pad {
+			padding: 0 10px;
+		}
+	}
+	.gmaps {
+		width: 100%;
+		height: 500px;
+		border-radius: 10px;
+		@include breakpoint(mobile) {
+			height: 400px;
+		}
+		margin: 10px 0;
+	}
+	.gallery-wisata {
+		// margin-top: 15px;
+		.gallery-title {
+			display: inline-block;
+			position: relative;
+			h2 {
+				text-transform: capitalize;
+				font-weight: 700;
+				@include breakpoint(mobile) {
+					font-size: 18px;
+				}
+			}
+			span {
+				position: absolute;
+				font-size: 10px;
+				top: 0px;
+				right: -45px;
+				@include breakpoint(mobile) {
+					font-size: 8px;
+					right: -35px;
+				}
+			}
+		}
+		&.pangandaran {
+			@include breakpoint(mobile) {
+				margin-top: 50px;
+			}
+		}
+	}
+	.portfolio-grid {
+		.slick-mobile {
+			margin: 0 -10px;
+		}
+		.portfolio-item {
+			padding: 10px;
+			margin: 0;
+			.portfolio-box {
+			    position: relative;
+			    overflow: hidden;
+			    a {
+			        display: block;
+			    }
+				.portfolio-image-wrap {
+			        display: block;
+			        transition: all 0.3s ease 0s;
+			    }
+			    &:hover {
+			    	.portfolio-image-wrap {
+				        transform: scale(1.1);
+				        transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+				        width: 100%;
+				    }
+				    .portfolio-caption-mask {
+				        opacity: 1;
+				        visibility: visible;
+				        .portfolio-caption-text {
+					        bottom: 30px;
+					        opacity: 1;
+					    }
+				    }
+			    }
+			    .portfolio-caption-mask {
+			        background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+			        height: 100%;
+			        left: 0;
+			        opacity: 0;
+			        overflow: hidden;
+			        position: absolute;
+			        top: 0;
+			        visibility: hidden;
+			        width: 100%;
+			        transition: all 0.5s ease-in-out 0s;
+			        z-index: 9;
+			        @include breakpoint(mobile) {
+						visibility: visible;
+						opacity: 1;
+						background: none;
+			        }
+			        .portfolio-caption-text {
+				        bottom: -60px;
+				        left: 0;
+				        opacity: 0;
+				        padding: 0 30px;
+				        position: absolute;
+				        text-align: left;
+				        transition: all 0.5s ease-in-out 0s;
+				        @include breakpoint(mobile) {
+				        	opacity: 1;
+				        	bottom: 10px;
+				        	background-color: rgba(0, 0, 0, 0.4);
+				        	padding: 10px 30px;
+				        	border-radius: 5px;
+				        	h5 {
+				        		font-size: 14px;
+				        	}
+				        	p {
+				        		font-size: 10px;
+				        	}
+				        }
+				    }
+				    h1, h2, h3, h4, h5 {
+				    	color: #fff;
+				        margin-bottom: 5px;
+				        text-transform: uppercase;
+				        font-size: 14px;
+				        font-family: 'Montserrat-Bold';
+				        // font-weight: 700;
+				    }
+					p {
+				        margin-bottom: 0px;
+				        color: #fff;
+				        font-size: 12px;
+				        // text-transform: uppercase;
+				        // letter-spacing: 1px;
+				    }
+			    }
+			}
+		}
+	}
+	.slick-dots {
+		button {
+			&:before {
+				font-size: 12px;
+			}
+		}
+	}
+	.wow {
+		visibility: hidden;
+	}
+}
+
+.white-popup {
+	position: relative;
+	background: #FFF;
+	width: auto;
+	max-width: 60%;
+	margin: 0 auto;
+	@include breakpoint(mobile) {
+		max-width: 100%;
+	}
+	.popup-item {
+		img {
+			margin: 0 auto;
+		}
+	}
+	.popup-caption {
+		padding: 20px;
+	}
+	.mfp-close {
+		color: #fff;
+		opacity: 0.85;
+	}
+	.slick-prev, .slick-next {
+		&:before {
+			font-family: 'FontAwesome';
+			color: #fff;
+			font-size: 16px;
+			background-color: rgb(134, 151, 145);
+			padding: 10px;
+		}
+	}
+	.slick-prev {
+		left: 0px;
+		z-index: 9;
+		&:before {
+			content: "\f053";
+		}	
+	}
+	.slick-next {
+		right: 12px;
+		z-index: 9;
+		&:before {
+			content: "\f054";
+		}
+	}
+}
+
+.gallery-wrap {
+	position: relative;
+	background: #FFF;
+	width: auto;
+	max-width: 80%;
+	margin: 0 auto;
+	@include breakpoint(mobile) {
+		max-width: 100%;
+	}
+	.popup-item {
+		img {
+			margin: 0 auto;
+		}
+	}
+	.popup-caption {
+		padding: 20px;
+	}
+	.slick-prev, .slick-next {
+		&:before {
+			font-family: 'FontAwesome';
+			color: #fff;
+			font-size: 16px;
+			background-color: rgb(134, 151, 145);
+			padding: 10px;
+		}
+	}
+	.slick-prev {
+		left: 0px;
+		z-index: 9;
+		&:before {
+			content: "\f053";
+		}	
+	}
+	.slick-next {
+		right: 12px;
+		z-index: 9;
+		&:before {
+			content: "\f054";
+		}
+	}
+}

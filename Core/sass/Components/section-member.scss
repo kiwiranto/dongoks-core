@@ -1,0 +1,45 @@
+#member {
+	background-color: #fff;
+	.profile-member {
+		.member-notice {
+			margin-top: 50px;
+			h2 {
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+			p {
+				text-align: justify;
+			}
+		}
+		.profile-box {
+			margin: 10px auto;
+			min-height: 150px;
+			a {
+				color: #333;
+				&:hover {
+					text-decoration: none;
+					color: #000;
+					figure {
+				        transform: scale(1.1);
+				        transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+				        width: 100%;
+					}
+				}
+			}
+			figure {
+				img {
+					border-radius: 3px;
+					width: 70%;
+					border: 1px solid #898989;
+				}
+				h5 {
+					font-size: 15px;
+					font-weight: 700;
+					@include breakpoint(mobile) {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}

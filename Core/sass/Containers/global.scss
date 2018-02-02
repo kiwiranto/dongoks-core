@@ -1,0 +1,91 @@
+body {
+	position: relative;
+}
+// h1, h2, h3, h4, h5 {
+// 	margin-top: 0;
+// }
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+strong {
+    font-family: 'Montserrat-Bold';
+}
+
+//Section Styling
+.style-matcher {
+ 	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	color: #333;
+	text-align: center;
+	padding: 70px 0 50px;
+	.section-title {
+		h1 {
+			font-family: 'Montserrat-Bold';
+			text-transform: uppercase;
+			font-size: 3em;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                background: $orange;
+                height: 3px;
+                width: 60px;
+                bottom: -10px;
+            }
+			@include breakpoint(mobile) {
+				font-size: 2em;
+			}
+		}
+        p {
+            text-align: justify;
+        }
+        .section-caption {
+            margin: 30px 0 0;
+        }
+	}
+    .section-content {
+        margin-top: 20px;
+    }
+}
+
+ .top-control {
+    background: #f9461d none repeat scroll 0 0;
+    border-radius: 30px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    opacity: 0;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    &.show-button {
+    	opacity: 1;
+    }
+    a {
+        display: block;
+    }
+    .fa {
+    	padding-top: 15px;
+    	color: #fff;
+    }
+ }
+ 
+.example-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}

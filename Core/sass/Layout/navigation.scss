@@ -1,0 +1,93 @@
+.page-navigation {
+	background: transparent;
+	text-align: right;
+	border: none;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	padding: 8px 16px;
+	@include breakpoint(tablet) {
+		padding: 5px 0;
+		background-color: rgba(0,0,0,0.8);
+	}
+	&.navbar-fixed {
+	    z-index: 99;
+	    padding: 5px 0;
+	    top: 0;
+	    -webkit-animation: fadeInDown 800ms;
+	    animation: fadeInDown 800ms;
+	    -webkit-backface-visibility: hidden;
+	    background-color: rgba(0,0,0,0.9);
+	    @include breakpoint(tablet) {
+	    	background-color: rgba(0,0,0,0.8);
+	    }
+	}
+	&.hide-navbar {
+		transform: translate(0, -100%);
+		-webkit-backface-visibility: hidden;
+	}
+	.navbar-toggle {
+		border: 2px solid #fff;
+		.icon-bar {
+			background-color: #fff;
+		}
+		&:hover, &:focus {
+			background-color: transparent;
+		}
+	}
+	.navbar-brand {
+		color: #fff;
+		font-size: 20px;
+		font-weight: 700;
+		&:hover {
+			text-decoration: none;
+			color: $orange;
+		}
+		&:focus {
+			color: #fff;
+		}
+	}
+	.navbar-collapse, {
+		@include breakpoint(tablet) {
+			// box-shadow: none;
+			// border: none;
+			// width: 100%;
+			margin-top: 5px;
+			float: none !important;
+		}
+	}
+	.navbar-nav {
+		@include breakpoint(tablet) {
+			margin: 0;
+			text-align: center;
+		}
+		li {
+			&.active, {
+				a, a:hover, a:focus {
+					background-color: transparent;
+					color: $orange;
+					font-weight: 700;
+				}
+			}
+			a {
+				display: inline-block;
+				padding: 15px 20px;
+				color: #fff;
+				font-family: 'Montserrat-Bold';
+				font-size: 12px;
+				font-weight: 700;
+				text-transform: uppercase;
+				transition: all 0.2s ease 0s;
+				&:hover {
+					text-decoration: none;
+					color: $orange;
+					font-weight: 700;
+				}
+				&:focus {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
