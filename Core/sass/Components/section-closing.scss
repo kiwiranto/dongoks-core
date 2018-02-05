@@ -1,3 +1,24 @@
 #closing {
-
+	.section-content {
+		margin-top: 30px;
+		h3 {
+			@include breakpoint(mobile) {
+				font-size: 20px;
+			}
+		}
+		.gallery-item {
+			padding: 10px;
+			iframe {
+				width: 100%;
+				min-height: 315px;
+			}
+		}
+		.slick-dots {
+			button {
+				&:before {
+					font-size: 10px;
+				}
+			}
+		}
+	} 
 }

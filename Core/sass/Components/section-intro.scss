@@ -14,6 +14,9 @@
 	.hero-text {
 		padding-top: 300px;
 		color: #fff;
+		@include breakpoint(desktop) {
+			padding-top: 200px;
+		}
 		@include breakpoint(mobile) {
 				padding-top: 150px;
 			}

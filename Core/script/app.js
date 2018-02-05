@@ -46,12 +46,6 @@
 		$('.calendar-popup').magnificPopup({
 			type:'image'
 		});
-		
-		//Magnific popup Ajax
-		$('.ajax-popup-link').magnificPopup({
-		  type: 'ajax'
-		});
-
 
 		//Slick Carousel
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -77,21 +71,12 @@
 			asNavFor: '.list-date',
 			autoplay: false
 		});
-		
-		$('.img-slider').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			dots: true,
-			arrows: true,
-			adaptiveHeight: true,
-			infinite: true
-		});
 
-		$('.img-slider-ajax').slick({
+		$('.gallery-memory').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			dots: true,
-			arrows: true,
+			arrows: false,
 			adaptiveHeight: true,
 			infinite: true
 		});
@@ -138,7 +123,7 @@
 		  infinite: true,
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
-		  dots: true,
+		  dots: false,
 		  arrows: false,
 		  adaptiveHeight: true
 		});

@@ -50,6 +50,14 @@ strong {
 	}
     .section-content {
         margin-top: 20px;
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 26px;
+        }
+        p {
+            text-align: justify;
+        }
     }
 }
 
@@ -76,7 +84,7 @@ strong {
         display: block;
     }
     .fa {
-    	padding-top: 15px;
+    	padding-top: 17px;
     	color: #fff;
     }
  }
